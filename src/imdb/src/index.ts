@@ -9,6 +9,6 @@ import { join, resolve } from 'path';
   await rm(dirTmp, { recursive: true, force: true });
 
   for (let i = 0; i < 10; i++) {
-    await write(join(dirTmp, 'imdb', `${i + 1}.json`), JSON.stringify({ index: i }));
+    await write(join(dirTmp, 'imdb', `${i}.json`), JSON.stringify({ index: i }));
   }
 })();
