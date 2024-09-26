@@ -1,0 +1,19 @@
+{
+  "name": "test-workflows",
+  "private": true,
+  "description": "",
+  "trustedDependencies-annotation": "Needed for bun to allow running install scripts",
+  "type": "module",
+  "eslintConfig": {
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "scripts": {
+    "build": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.10",
+    "@types/node": "^20.14.11"
+  }
+}
