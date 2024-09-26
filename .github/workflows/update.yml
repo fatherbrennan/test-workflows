@@ -42,7 +42,7 @@ jobs:
           git rm -rf imdb || true
           cp -r tmp/imdb .
           git add imdb
-          git commit -m "Update IMDb | ${{ env.TODAY_DATE }}" || true
+          git commit -m "IMDb | ${{ env.TODAY_DATE }} | Update" || true
           git push origin get
         env:
           github_TOKEN: ${{ secrets.GITHUB_TOKEN }}
