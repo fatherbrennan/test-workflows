@@ -36,6 +36,7 @@ jobs:
       - name: Commit and Push tmp directory
         working-directory: ./
         run: |
+          ls -la
           git checkout --orphan get
           git reset --hard
           git rm -rf imdb || true
